@@ -53,6 +53,7 @@ public class ProductoRegistroVista extends CustomVista {
 
     //Variables necesarias
     String opcionBusqueda = "";
+    String pathFoto = null;
     boolean editando = false;
 
     public ProductoRegistroVista () {
@@ -122,6 +123,8 @@ public class ProductoRegistroVista extends CustomVista {
                 System.out.println(file.getPath());
             } catch (IOException ioException) {
 
+            } catch (IllegalArgumentException illegalArgument) {
+
             }
         }
     }
@@ -163,10 +166,14 @@ public class ProductoRegistroVista extends CustomVista {
         @Override
         public void mouseClicked(MouseEvent e) {
             editando = false;
-            opcionBusqueda = listaBuscador.getSelectedValue().toString();
-            establecerDatos(opcionBusqueda);
-            listaBuscador.setVisible(false);
-            txtBuscar.setText("");
+            try {
+                opcionBusqueda = listaBuscador.getSelectedValue().toString();
+                establecerDatos(opcionBusqueda);
+                listaBuscador.setVisible(false);
+                txtBuscar.setText("");
+            } catch (NullPointerException nullException) {
+
+            }
         }
     }
 
@@ -189,7 +196,12 @@ public class ProductoRegistroVista extends CustomVista {
             double precio = Double.parseDouble(txtPrecio.getText());
             String presentacion = comboBoxPresentacion.getText();
             boolean activo = checkActivo.isSelected();
-            String pathFoto = file.getPath();
+
+            if(file != null) {
+                pathFoto = file.getPath();
+            } else {
+                pathFoto = "src/Iconos/icn_Producto.png";
+            }
 
             if (datosCompletos(presentacion, nombre, proveedor)) {
                 if (!editando) {

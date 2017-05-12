@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71151962-86bd-49d1-a185-7ff9c6488b69" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Iconos/icn_Logo.png" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Iconos/icn_Logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Iconos/icn_Logo.png" afterPath="$PROJECT_DIR$/src/Iconos/icn_Logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java" afterPath="$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/UsuarioVista.java" afterPath="$PROJECT_DIR$/src/Vistas/UsuarioVista.java" />
+>>>>>>> 1ca82aa9fb623998381c3bd3626c56731acc1333
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,31 +37,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BaseDatosVista.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/BaseDatosVista.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BeautyTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="140">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsuarioVista.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsuarioVista.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vistas/UsuarioVista.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="339">
               <caret line="93" column="68" lean-forward="true" selection-start-line="93" selection-start-column="68" selection-end-line="93" selection-end-column="68" />
+=======
+            <state relative-caret-position="194">
+              <caret line="275" column="31" lean-forward="true" selection-start-line="275" selection-start-column="31" selection-end-line="275" selection-end-column="31" />
+>>>>>>> 1ca82aa9fb623998381c3bd3626c56731acc1333
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#UsuarioVista#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#componentes#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#CambiarImagen#0;class#UsuarioVista#0" expanded="false" />
-                <element signature="class#BotonGuardar#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="class#BotonNuevo#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#BotonRol#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="e#10854#10855#0" expanded="true" />
+                <element signature="e#10903#10904#0" expanded="true" />
+                <element signature="e#10968#10969#0" expanded="true" />
+                <element signature="e#11018#11019#0" expanded="true" />
                 <element signature="class#BuscarKeyAdapter#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#BuscarFocusAdapter#0;class#UsuarioVista#0" expanded="false" />
-                <element signature="class#ListaBuscarMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="e#11418#11419#0" expanded="true" />
+                <element signature="e#11472#11473#0" expanded="true" />
+                <element signature="e#11537#11538#0" expanded="true" />
+                <element signature="e#11592#11593#0" expanded="true" />
                 <element signature="class#ListaRolMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="method#escogioRol#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="method#esCorreo#0;class#UsuarioVista#0" expanded="false" />
@@ -66,50 +94,30 @@
                 <element signature="method#datosCompletos#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="method#buscarUsuario#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="method#establecerDatos#0;class#UsuarioVista#0" expanded="false" />
-                <marker date="1494602295052" expanded="true" signature="15268:15322" ph="SELECT corre... Usuario" />
-                <marker date="1494602295052" expanded="true" signature="16017:16055" ph="SELECT * FRO... Usuario" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActualizarSQL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Conexion/ActualizarSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="206" lean-forward="false" selection-start-line="11" selection-start-column="206" selection-end-line="11" selection-end-column="206" />
-              <folding>
-                <element signature="method#actualizarUsuario#0;class#ActualizarSQL#0" expanded="false" />
-                <element signature="method#actualizarProducto#0;class#ActualizarSQL#0" expanded="false" />
-                <marker date="1494598914226" expanded="true" signature="442:603" ph="UPDATE Usuar... " />
-                <marker date="1494598914226" expanded="true" signature="1538:1659" ph="UPDATE Produ... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductoRegistroVista.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductoRegistroVista.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="351" column="38" lean-forward="true" selection-start-line="351" selection-start-column="38" selection-end-line="351" selection-end-column="38" />
+            <state relative-caret-position="196">
+              <caret line="172" column="37" lean-forward="false" selection-start-line="172" selection-start-column="37" selection-end-line="172" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#componentes#0;class#ProductoRegistroVista#0" expanded="false" />
-                <element signature="class#CambiarImagen#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#Buscador#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#BuscadorFocus#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#PresentacionFocus#0;class#ProductoRegistroVista#0" expanded="false" />
-                <element signature="class#ListaBuscadorElemento#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#ListaPresentacionElemento#0;class#ProductoRegistroVista#0" expanded="false" />
+                <element signature="class#BotonGuardar#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#BotonNuevo#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#BotonEditar#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#BotonLlegadaMercancia#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="method#datosCompletos#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="method#buscarProducto#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="method#establecerDatos#0;class#ProductoRegistroVista#0" expanded="false" />
-                <marker date="1494599172626" expanded="true" signature="10715:10771" ph="SELECT nombr... Producto" />
-                <marker date="1494599172626" expanded="true" signature="11490:11529" ph="SELECT * FRO... Producto" />
               </folding>
             </state>
           </provider>
@@ -118,7 +126,7 @@
       <file leaf-file-name="ProductoLlegadaMercanciaVista.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoLlegadaMercanciaVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="1302">
               <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -138,7 +146,7 @@
       <file leaf-file-name="PacienteRegistroVista.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRegistroVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
+            <state relative-caret-position="924">
               <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,11 +160,9 @@
       <file leaf-file-name="Contenedor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Contenedor/Contenedor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="462">
               <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,7 +170,7 @@
       <file leaf-file-name="BeautyList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="238">
               <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
@@ -174,31 +180,8 @@
       <file leaf-file-name="InsertarSQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Conexion/InsertarSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-              <folding>
-                <marker date="1494595868581" expanded="true" signature="536:613" ph="INSERT INTO Usuario... " />
-                <marker date="1494595868581" expanded="true" signature="1585:1658" ph="INSERT INTO Producto... " />
-                <marker date="1494595868581" expanded="true" signature="2635:2717" ph="INSERT INTO Paciente... " />
-                <marker date="1494595868581" expanded="true" signature="3759:3829" ph="INSERT INTO Venta... " />
-                <marker date="1494595868581" expanded="true" signature="4664:4706" ph="INSERT INTO Antecedente... " />
-                <marker date="1494595868581" expanded="true" signature="5288:5337" ph="INSERT INTO AntecedenteCronico... " />
-                <marker date="1494595868581" expanded="true" signature="6013:6054" ph="INSERT INTO Recomendacion... " />
-                <marker date="1494595868581" expanded="true" signature="6672:6713" ph="INSERT INTO VentaProducto... " />
-                <marker date="1494595868581" expanded="true" signature="7325:7370" ph="SELECT * FRO... Inventario" />
-                <marker date="1494595868581" expanded="true" signature="7629:7696" ph="UPDATE Inven... " />
-                <marker date="1494595868581" expanded="true" signature="7973:8008" ph="INSERT INTO Inventario... " />
-                <marker date="1494595868581" expanded="true" signature="8505:8561" ph="INSERT INTO Modificacion... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConexionSQL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Conexion/ConexionSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            <state relative-caret-position="112">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -270,10 +253,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="y" value="-1" />
+    <option name="width" value="1366" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -290,14 +272,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Clinica-Control" />
+              <option name="myItemId" value="Clinica Control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -307,21 +288,21 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Clinica-Control" />
+              <option name="myItemId" value="Clinica Control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Clinica-Control" />
+              <option name="myItemId" value="Clinica Control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Clinica-Control" />
+              <option name="myItemId" value="Clinica Control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Clinica-Control" />
+              <option name="myItemId" value="Clinica Control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -331,11 +312,29 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Clinica-Control" />
+              <option name="myItemId" value="Clinica Control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Clinica-Control" />
+              <option name="myItemId" value="Clinica Control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Iconos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Clinica Control" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Clinica Control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -349,6 +348,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -562,136 +562,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -706,14 +576,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -758,22 +620,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -807,12 +653,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -839,22 +679,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
     <list size="5">
@@ -892,7 +716,7 @@
     <option name="totallyTimeSpent" value="5107000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="-1" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -904,27 +728,60 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.021505376" sideWeight="0.54392385" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33802816" sideWeight="0.45607615" order="2" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 1ca82aa9fb623998381c3bd3626c56731acc1333
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25199363" sideWeight="0.45607615" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1391258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19033232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 1ca82aa9fb623998381c3bd3626c56731acc1333
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.397463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39846155" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.021505376" sideWeight="0.54392385" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.397463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.45607615" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1191,7 +1048,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/BaseDatosVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="98">
           <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
@@ -1199,7 +1056,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="238">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
@@ -1207,17 +1064,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Contenedor/Contenedor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="462">
           <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="140">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
@@ -1235,7 +1090,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRegistroVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
+        <state relative-caret-position="924">
           <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1245,17 +1100,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conexion/ConexionSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoLlegadaMercanciaVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="1302">
           <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1273,22 +1120,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Conexion/InsertarSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <marker date="1494595868581" expanded="true" signature="536:613" ph="INSERT INTO Usuario... " />
-            <marker date="1494595868581" expanded="true" signature="1585:1658" ph="INSERT INTO Producto... " />
-            <marker date="1494595868581" expanded="true" signature="2635:2717" ph="INSERT INTO Paciente... " />
-            <marker date="1494595868581" expanded="true" signature="3759:3829" ph="INSERT INTO Venta... " />
-            <marker date="1494595868581" expanded="true" signature="4664:4706" ph="INSERT INTO Antecedente... " />
-            <marker date="1494595868581" expanded="true" signature="5288:5337" ph="INSERT INTO AntecedenteCronico... " />
-            <marker date="1494595868581" expanded="true" signature="6013:6054" ph="INSERT INTO Recomendacion... " />
-            <marker date="1494595868581" expanded="true" signature="6672:6713" ph="INSERT INTO VentaProducto... " />
-            <marker date="1494595868581" expanded="true" signature="7325:7370" ph="SELECT * FRO... Inventario" />
-            <marker date="1494595868581" expanded="true" signature="7629:7696" ph="UPDATE Inven... " />
-            <marker date="1494595868581" expanded="true" signature="7973:8008" ph="INSERT INTO Inventario... " />
-            <marker date="1494595868581" expanded="true" signature="8505:8561" ph="INSERT INTO Modificacion... " />
-          </folding>
+        <state relative-caret-position="112">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,51 +1133,45 @@
           <folding>
             <element signature="method#actualizarUsuario#0;class#ActualizarSQL#0" expanded="false" />
             <element signature="method#actualizarProducto#0;class#ActualizarSQL#0" expanded="false" />
-            <marker date="1494598914226" expanded="true" signature="442:603" ph="UPDATE Usuar... " />
-            <marker date="1494598914226" expanded="true" signature="1538:1659" ph="UPDATE Produ... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java">
+    <entry file="file://$PROJECT_DIR$/src/Conexion/ConexionSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="351" column="38" lean-forward="true" selection-start-line="351" selection-start-column="38" selection-end-line="351" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#componentes#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#CambiarImagen#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#Buscador#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BuscadorFocus#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#PresentacionFocus#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#ListaBuscadorElemento#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#ListaPresentacionElemento#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonNuevo#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonEditar#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonLlegadaMercancia#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#datosCompletos#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#buscarProducto#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#establecerDatos#0;class#ProductoRegistroVista#0" expanded="false" />
-            <marker date="1494599172626" expanded="true" signature="10715:10771" ph="SELECT nombr... Producto" />
-            <marker date="1494599172626" expanded="true" signature="11490:11529" ph="SELECT * FRO... Producto" />
-          </folding>
+        <state relative-caret-position="112">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/UsuarioVista.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="339">
           <caret line="93" column="68" lean-forward="true" selection-start-line="93" selection-start-column="68" selection-end-line="93" selection-end-column="68" />
+=======
+        <state relative-caret-position="194">
+          <caret line="275" column="31" lean-forward="true" selection-start-line="275" selection-start-column="31" selection-end-line="275" selection-end-column="31" />
+>>>>>>> 1ca82aa9fb623998381c3bd3626c56731acc1333
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#UsuarioVista#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#componentes#0;class#UsuarioVista#0" expanded="false" />
             <element signature="class#CambiarImagen#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#BotonGuardar#0;class#UsuarioVista#0" expanded="false" />
             <element signature="class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BotonNuevo#0;class#UsuarioVista#0" expanded="false" />
             <element signature="class#BotonRol#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="e#10854#10855#0" expanded="true" />
+            <element signature="e#10903#10904#0" expanded="true" />
+            <element signature="e#10968#10969#0" expanded="true" />
+            <element signature="e#11018#11019#0" expanded="true" />
             <element signature="class#BuscarKeyAdapter#0;class#UsuarioVista#0" expanded="false" />
             <element signature="class#BuscarFocusAdapter#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#ListaBuscarMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="e#11418#11419#0" expanded="true" />
+            <element signature="e#11472#11473#0" expanded="true" />
+            <element signature="e#11537#11538#0" expanded="true" />
+            <element signature="e#11592#11593#0" expanded="true" />
             <element signature="class#ListaRolMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
             <element signature="method#escogioRol#0;class#UsuarioVista#0" expanded="false" />
             <element signature="method#esCorreo#0;class#UsuarioVista#0" expanded="false" />
@@ -1353,8 +1181,28 @@
             <element signature="method#datosCompletos#0;class#UsuarioVista#0" expanded="false" />
             <element signature="method#buscarUsuario#0;class#UsuarioVista#0" expanded="false" />
             <element signature="method#establecerDatos#0;class#UsuarioVista#0" expanded="false" />
-            <marker date="1494602295052" expanded="true" signature="15268:15322" ph="SELECT corre... Usuario" />
-            <marker date="1494602295052" expanded="true" signature="16017:16055" ph="SELECT * FRO... Usuario" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="172" column="37" lean-forward="false" selection-start-line="172" selection-start-column="37" selection-end-line="172" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#componentes#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#Buscador#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BuscadorFocus#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#PresentacionFocus#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#ListaPresentacionElemento#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BotonGuardar#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BotonNuevo#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BotonEditar#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BotonLlegadaMercancia#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="method#datosCompletos#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="method#buscarProducto#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="method#establecerDatos#0;class#ProductoRegistroVista#0" expanded="false" />
           </folding>
         </state>
       </provider>
