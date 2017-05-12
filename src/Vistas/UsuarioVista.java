@@ -62,7 +62,6 @@ public class UsuarioVista extends CustomVista {
     //Variables
     private static final String PATTERN_EMAIL = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
     String opcionBusqueda = "";
-    String opcionRol = "";
     String pathFoto = null;
     boolean editando = false;
 
@@ -138,7 +137,9 @@ public class UsuarioVista extends CustomVista {
                 Icon i = new ImageIcon(icono.getImage().getScaledInstance(btnImagenPerfil.getWidth(), btnImagenPerfil.getHeight(), Image.SCALE_DEFAULT));
                 btnImagenPerfil.setIcon(i);
             } catch (IOException ioException) {
-                System.err.println(ioException.getMessage());
+
+            } catch (IllegalArgumentException argumentException) {
+
             }
         }
     }
@@ -160,7 +161,7 @@ public class UsuarioVista extends CustomVista {
             if(file != null) {
                 pathFoto = file.getPath();
             } else {
-                pathFoto = "src\\Iconos\\icn_FotoPerfil.png";
+                pathFoto = "src/Iconos/icn_FotoPerfil.png";
             }
 
             if (datosCompletos(rol, nombre, apellidoPaterno, apellidoMaterno, correo, pass1, pass2)) {
