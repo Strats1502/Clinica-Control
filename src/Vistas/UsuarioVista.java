@@ -58,12 +58,14 @@ public class UsuarioVista extends CustomVista {
     public static BeautyErrorMessage errorContraseña1 = new BeautyErrorMessage("Ingresa una contraseña...");
     public static BeautyErrorMessage errorContraseña2 = new BeautyErrorMessage("Repite la contraseña...");
     public static BeautyErrorMessage errorNoIguales = new BeautyErrorMessage("Las contraseñas no son iguales...");
+    public static BeautyErrorMessage errorEditar = new BeautyErrorMessage("No has seleccionado un registro para editar...");
 
     //Variables
     private static final String PATTERN_EMAIL = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-    String opcionBusqueda = "";
+    String opcionBusqueda = null;
     String pathFoto = null;
     boolean editando = false;
+    int id = 0;
 
     //Variables para buscar un archivo
     JFileChooser jFile = new JFileChooser();
@@ -179,6 +181,7 @@ public class UsuarioVista extends CustomVista {
                     btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
                 } else {
                     ActualizarSQL.actualizarUsuario(correo, pathFoto, rol, nombre, apellidoPaterno, apellidoMaterno, pass1, activo, administrador);
+                    InsertarSQL.insertarModificacion(id, 1, "Usuario");
                     comboBoxRol.setText("Rol");
                     txtNombre.setHint("Nombre");
                     txtApellidoPaterno.setHint("Apellido paterno");
@@ -189,25 +192,33 @@ public class UsuarioVista extends CustomVista {
                     checkActivo.setSelected(false);
                     checkAdministrador.setSelected(false);
                     btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+                    txtCorreo.setEnabled(true);
                 }
             }
+            opcionBusqueda = null;
+            editando = false;
         }
     }
 
     private class BotonEditar implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            editando = true;
-            btnImagenPerfil.setEnabled(true);
-            comboBoxRol.setEnabled(true);
-            txtNombre.setEnabled(true);
-            txtApellidoPaterno.setEnabled(true);
-            txtApellidoMaterno.setEnabled(true);
-            txtCorreo.setEnabled(false);
-            txtPass.setEnabled(true);
-            txtPass2.setEnabled(true);
-            checkActivo.setEnabled(true);
-            checkAdministrador.setEnabled(true);
+            if(opcionBusqueda != null) {
+                editando = true;
+                btnGuardar.setEnabled(true);
+                btnImagenPerfil.setEnabled(true);
+                comboBoxRol.setEnabled(true);
+                txtNombre.setEnabled(true);
+                txtApellidoPaterno.setEnabled(true);
+                txtApellidoMaterno.setEnabled(true);
+                txtCorreo.setEnabled(false);
+                txtPass.setEnabled(true);
+                txtPass2.setEnabled(true);
+                checkActivo.setEnabled(true);
+                checkAdministrador.setEnabled(true);
+            } else {
+                errorEditar.setVisible(true);
+            }
         }
     }
 
@@ -215,7 +226,10 @@ public class UsuarioVista extends CustomVista {
         @Override
         public void actionPerformed(ActionEvent e ) {
             editando = false;
+            opcionBusqueda = null;
+            btnGuardar.setEnabled(true);
             btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+            comboBoxRol.setText("Rol");
             txtBuscar.setText("Buscar...");
             txtNombre.setText("Nombre");
             txtApellidoPaterno.setText("Apellido paterno");
@@ -227,6 +241,7 @@ public class UsuarioVista extends CustomVista {
             checkAdministrador.setSelected(false);
 
             btnImagenPerfil.setEnabled(true);
+            comboBoxRol.setEnabled(true);
             txtNombre.setEnabled(true);
             txtApellidoPaterno.setEnabled(true);
             txtApellidoMaterno.setEnabled(true);
@@ -279,6 +294,7 @@ public class UsuarioVista extends CustomVista {
                 establecerDatos(opcionBusqueda);
                 listaBuscador.setVisible(false);
                 txtBuscar.setText("");
+                btnGuardar.setEnabled(false);
             } catch (NullPointerException nullException) {
 
             }
@@ -407,6 +423,7 @@ public class UsuarioVista extends CustomVista {
             ps.executeQuery();
             ResultSet rs = ps.getResultSet();
             while(rs.next()) {
+                this.id = Integer.parseInt(rs.getObject("id").toString());
                 String pathFoto = rs.getObject("path_foto").toString();
                 String rol = rs.getObject("rol").toString();
                 String nombre = rs.getObject("nombre").toString();
@@ -445,7 +462,6 @@ public class UsuarioVista extends CustomVista {
         }
     }
 
-
     public static void main(String[] args) {
         JFrame f = new JFrame("eee");
         f.add(InsertarSQL.errorCorreo);
@@ -458,6 +474,7 @@ public class UsuarioVista extends CustomVista {
         f.add(errorContraseña1);
         f.add(errorContraseña2);
         f.add(errorNoIguales);
+        f.add(errorEditar);
         //f.add(getListaUsuarios());
         f.add(listaRol);
         f.add(listaBuscador);
@@ -467,6 +484,5 @@ public class UsuarioVista extends CustomVista {
         f.setSize(800, 500);
         f.setVisible(true);
         f.setLocationRelativeTo(null);
-
     }
 }

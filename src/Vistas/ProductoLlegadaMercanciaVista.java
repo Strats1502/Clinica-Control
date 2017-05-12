@@ -31,8 +31,12 @@ public class ProductoLlegadaMercanciaVista extends CustomVista {
     public static DefaultListModel dlmBuscador = new DefaultListModel();
     public static BeautyList listaBuscador = new BeautyList(dlmBuscador, 300, 150, 300, 140);
 
+    //Errores
+    public static BeautyErrorMessage errorFormato = new BeautyErrorMessage("Ingresa un carácter numérico...");
+    public static BeautyErrorMessage errorOpcion= new BeautyErrorMessage("No has seleccionado algun elemento...");
+
     //Variables
-    String opcionBusqueda = "";
+    String opcionBusqueda = null;
     int id = 0;
 
     //Constructor
@@ -57,6 +61,7 @@ public class ProductoLlegadaMercanciaVista extends CustomVista {
         txtNombre.setEnabled(false);
 
         txtBuscar.addKeyListener(new Buscador());
+        txtBuscar.addFocusListener(new BuscadorFocus());
         listaBuscador.addMouseListener(new ListaBuscadorElemento());
         btnNuevo.addActionListener(new BotonNuevo());
         btnGuardar.addActionListener(new BotonGuardar());
@@ -95,18 +100,38 @@ public class ProductoLlegadaMercanciaVista extends CustomVista {
         }
     }
 
+    private class BuscadorFocus extends FocusAdapter {
+        @Override
+        public void focusGained(FocusEvent e) {
+            listaBuscador.setVisible(true);
+        }
+
+        @Override
+        public void focusLost(FocusEvent e) {
+            listaBuscador.setVisible(false);
+        }
+    }
+
     private class BotonGuardar implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            String nombre = txtNombre.getText();
-            String presentacion = comboBoxPresentacion.getText();
-            int cantidad = Integer.parseInt(txtCantidad.getText());
-            buscarID(nombre, presentacion);
-            System.out.println(id);
-            InsertarSQL.insertarInventario(id, cantidad);
-            btnImagenProducto.setIcon(establecerIcono("Producto",150, 150));
-            txtNombre.setText("Nombre");
-            txtCantidad.setText("Cantidad");
+            if (selecciono()) {
+                try {
+                    String nombre = txtNombre.getText();
+                    String presentacion = comboBoxPresentacion.getText();
+                    int cantidad = Integer.parseInt(txtCantidad.getText());
+                    buscarID(nombre, presentacion);
+                    InsertarSQL.insertarInventario(id, cantidad);
+                    btnImagenProducto.setIcon(establecerIcono("Producto", 150, 150));
+                    txtNombre.setText("Nombre");
+                    txtCantidad.setText("Cantidad");
+                    opcionBusqueda = null;
+                } catch (NumberFormatException numberException) {
+                    errorFormato.setVisible(true);
+                }
+            } else {
+                errorOpcion.setVisible(true);
+            }
         }
     }
 
@@ -122,6 +147,14 @@ public class ProductoLlegadaMercanciaVista extends CustomVista {
     /**
      * Métodos
      */
+    private boolean selecciono(){
+        if(opcionBusqueda != null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     private void buscarID(String nombre, String presentacion) {
         String sql = "SELECT id FROM Producto WHERE nombre = ? and presentacion = ?";
         try {
@@ -194,12 +227,14 @@ public class ProductoLlegadaMercanciaVista extends CustomVista {
     public static void main(String[] args) {
         JFrame f = new JFrame("eee");
         f.add(listaBuscador);
+        f.add(errorFormato);
+        f.add(errorOpcion);
         f.add(new ProductoLlegadaMercanciaVista());
-        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(3);
+        f.setUndecorated(true);
         f.setSize(800, 500);
         f.setVisible(true);
-
+        f.setLocationRelativeTo(null);
     }
 
 }
