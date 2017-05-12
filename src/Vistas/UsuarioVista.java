@@ -1,6 +1,7 @@
 package Vistas;
 
 import ComponentesBeauty.*;
+import Conexion.ActualizarSQL;
 import Conexion.ConexionSQL;
 import Conexion.InsertarSQL;
 
@@ -62,12 +63,13 @@ public class UsuarioVista extends CustomVista {
     private static final String PATTERN_EMAIL = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
     String opcionBusqueda = "";
     String opcionRol = "";
+    String pathFoto = null;
     boolean editando = false;
 
     //Variables para buscar un archivo
     JFileChooser jFile = new JFileChooser();
     BufferedImage image = null;
-    File file = new File("src/Iconos/icn_FotoPerfil.png");
+    File file;
     FileFilter imageFilter = new FileNameExtensionFilter("Image files", ImageIO.getReaderFileSuffixes());
 
     public UsuarioVista() {
@@ -85,7 +87,7 @@ public class UsuarioVista extends CustomVista {
         comboBoxRol = new BeautyComboBox("Rol", 40, 250, 120, 20);
         txtNombre = new BeautyTextField("Nombre", 60, 290, 200, 20);
         txtApellidoPaterno = new BeautyTextField("Apellido paterno", 310, 290, 200, 20);
-        txtApellidoMaterno = new BeautyTextField("Apellido paterno", 570, 290, 200, 20);
+        txtApellidoMaterno = new BeautyTextField("Apellido materno", 570, 290, 200, 20);
         txtCorreo = new BeautyTextField("Correo", 60, 390, 200, 20);
         txtPass = new BeautyPasswordField("Contraseña", 310, 390, 200, 20);
         txtPass2 = new BeautyPasswordField("Repetir contraseña", 570, 390, 200, 20);
@@ -127,7 +129,6 @@ public class UsuarioVista extends CustomVista {
     private class CambiarImagen implements  ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            file.getPath();
             jFile.setFileFilter(imageFilter);
             jFile.showOpenDialog(null);
             file = jFile.getSelectedFile();
@@ -154,20 +155,40 @@ public class UsuarioVista extends CustomVista {
             String pass2 = String.copyValueOf(txtPass2.getPassword());
             boolean activo = checkActivo.isSelected();
             boolean administrador = checkAdministrador.isSelected();
-            String pathFoto = file.getPath();
+
+            //si escogio imagen le asigna la ruta, si no se queda por default
+            if(file != null) {
+                pathFoto = file.getPath();
+            } else {
+                pathFoto = "src\\Iconos\\icn_FotoPerfil.png";
+            }
 
             if (datosCompletos(rol, nombre, apellidoPaterno, apellidoMaterno, correo, pass1, pass2)) {
-                InsertarSQL.insertarUsuario(1, rol, nombre, apellidoPaterno, apellidoMaterno, correo, pass1, activo, administrador, pathFoto);
-                comboBoxRol.setText("Rol");
-                txtNombre.setHint("Nombre");
-                txtApellidoPaterno.setHint("Apellido paterno");
-                txtApellidoMaterno.setHint("Apellido materno");
-                txtCorreo.setHint("Correo");
-                txtPass.setHint("Contraseña");
-                txtPass2.setHint("Repetir contraseña");
-                checkActivo.setSelected(false);
-                checkAdministrador.setSelected(false);
-                btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+                if(!editando) {
+                    InsertarSQL.insertarUsuario(1, rol, nombre, apellidoPaterno, apellidoMaterno, correo, pass1, activo, administrador, pathFoto);
+                    comboBoxRol.setText("Rol");
+                    txtNombre.setHint("Nombre");
+                    txtApellidoPaterno.setHint("Apellido paterno");
+                    txtApellidoMaterno.setHint("Apellido materno");
+                    txtCorreo.setHint("Correo");
+                    txtPass.setHint("Contraseña");
+                    txtPass2.setHint("Repetir contraseña");
+                    checkActivo.setSelected(false);
+                    checkAdministrador.setSelected(false);
+                    btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+                } else {
+                    ActualizarSQL.actualizarUsuario(correo, pathFoto, rol, nombre, apellidoPaterno, apellidoMaterno, pass1, activo, administrador);
+                    comboBoxRol.setText("Rol");
+                    txtNombre.setHint("Nombre");
+                    txtApellidoPaterno.setHint("Apellido paterno");
+                    txtApellidoMaterno.setHint("Apellido materno");
+                    txtCorreo.setHint("Correo");
+                    txtPass.setHint("Contraseña");
+                    txtPass2.setHint("Repetir contraseña");
+                    checkActivo.setSelected(false);
+                    checkAdministrador.setSelected(false);
+                    btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+                }
             }
         }
     }
@@ -192,7 +213,9 @@ public class UsuarioVista extends CustomVista {
     private class BotonNuevo implements  ActionListener {
         @Override
         public void actionPerformed(ActionEvent e ) {
+            editando = false;
             btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+            txtBuscar.setText("Buscar...");
             txtNombre.setText("Nombre");
             txtApellidoPaterno.setText("Apellido paterno");
             txtApellidoMaterno.setText("Apellido materno");
@@ -351,7 +374,7 @@ public class UsuarioVista extends CustomVista {
     private  void buscarUsuario (String cadena) {
         dlmBuscador.removeAllElements();
         listaBuscador.setVisible(true);
-        String sql = "SELECT correo FROM Usuario WHERE correo LIKE ?";
+        String sql = "SELECT correo, activo FROM Usuario WHERE correo LIKE ?";
         int resultados = 0;
         try {
             PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
@@ -361,7 +384,10 @@ public class UsuarioVista extends CustomVista {
             while (rs.next()) {
                 resultados++;
                 String correo = rs.getObject("correo").toString();
-                dlmBuscador.addElement(correo);
+                boolean activo = rs.getBoolean("activo");
+                if(activo) {
+                    dlmBuscador.addElement(correo);
+                }
             }
         } catch (SQLException sqlException) {
 
@@ -431,10 +457,11 @@ public class UsuarioVista extends CustomVista {
         f.add(listaRol);
         f.add(listaBuscador);
         f.add(new UsuarioVista());
-        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(3);
+        f.setUndecorated(true);
         f.setSize(800, 500);
         f.setVisible(true);
+        f.setLocationRelativeTo(null);
 
     }
 }

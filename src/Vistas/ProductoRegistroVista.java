@@ -349,10 +349,11 @@ public class ProductoRegistroVista extends CustomVista {
         f.add(listaBuscador);
         f.add(listaPresentacion);
         f.add(new ProductoRegistroVista());
-        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(3);
+        f.setUndecorated(true);
         f.setSize(800, 500);
         f.setVisible(true);
+        f.setLocationRelativeTo(null);
     }
 
 }
