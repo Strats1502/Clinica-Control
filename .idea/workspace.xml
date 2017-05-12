@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71151962-86bd-49d1-a185-7ff9c6488b69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java" afterPath="$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/UsuarioVista.java" afterPath="$PROJECT_DIR$/src/Vistas/UsuarioVista.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,50 +51,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsuarioVista.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsuarioVista.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vistas/UsuarioVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="141" column="18" lean-forward="true" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
+            <state relative-caret-position="194">
+              <caret line="275" column="31" lean-forward="true" selection-start-line="275" selection-start-column="31" selection-end-line="275" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10881#10882#0" expanded="true" />
-                <element signature="e#10930#10931#0" expanded="true" />
-                <element signature="e#10995#10996#0" expanded="true" />
-                <element signature="e#11045#11046#0" expanded="true" />
-                <element signature="e#11445#11446#0" expanded="true" />
-                <element signature="e#11499#11500#0" expanded="true" />
-                <element signature="e#11564#11565#0" expanded="true" />
-                <element signature="e#11619#11620#0" expanded="true" />
+                <element signature="method#UsuarioVista#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#componentes#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="class#CambiarImagen#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="class#BotonNuevo#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="class#BotonRol#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="e#10854#10855#0" expanded="true" />
+                <element signature="e#10903#10904#0" expanded="true" />
+                <element signature="e#10968#10969#0" expanded="true" />
+                <element signature="e#11018#11019#0" expanded="true" />
+                <element signature="class#BuscarKeyAdapter#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="class#BuscarFocusAdapter#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="e#11418#11419#0" expanded="true" />
+                <element signature="e#11472#11473#0" expanded="true" />
+                <element signature="e#11537#11538#0" expanded="true" />
+                <element signature="e#11592#11593#0" expanded="true" />
+                <element signature="class#ListaRolMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#escogioRol#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#esCorreo#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#contraseñasIguales#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#datosPersonalesCompletos#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#datosContactoCompletos#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#datosCompletos#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#buscarUsuario#0;class#UsuarioVista#0" expanded="false" />
+                <element signature="method#establecerDatos#0;class#UsuarioVista#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConexionSQL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Conexion/ConexionSQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductoRegistroVista.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductoRegistroVista.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="183" column="51" lean-forward="false" selection-start-line="183" selection-start-column="51" selection-end-line="183" selection-end-column="51" />
+            <state relative-caret-position="196">
+              <caret line="172" column="37" lean-forward="false" selection-start-line="172" selection-start-column="37" selection-end-line="172" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#componentes#0;class#ProductoRegistroVista#0" expanded="false" />
-                <element signature="class#CambiarImagen#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#Buscador#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#BuscadorFocus#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#PresentacionFocus#0;class#ProductoRegistroVista#0" expanded="false" />
-                <element signature="class#ListaBuscadorElemento#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#ListaPresentacionElemento#0;class#ProductoRegistroVista#0" expanded="false" />
+                <element signature="class#BotonGuardar#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#BotonNuevo#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#BotonEditar#0;class#ProductoRegistroVista#0" expanded="false" />
                 <element signature="class#BotonLlegadaMercancia#0;class#ProductoRegistroVista#0" expanded="false" />
@@ -1108,29 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="183" column="51" lean-forward="false" selection-start-line="183" selection-start-column="51" selection-end-line="183" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#componentes#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#CambiarImagen#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#Buscador#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BuscadorFocus#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#PresentacionFocus#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#ListaBuscadorElemento#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#ListaPresentacionElemento#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonNuevo#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonEditar#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonLlegadaMercancia#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#datosCompletos#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#buscarProducto#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#establecerDatos#0;class#ProductoRegistroVista#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Conexion/ConexionSQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1141,18 +1124,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/UsuarioVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="141" column="18" lean-forward="true" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
+        <state relative-caret-position="194">
+          <caret line="275" column="31" lean-forward="true" selection-start-line="275" selection-start-column="31" selection-end-line="275" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10881#10882#0" expanded="true" />
-            <element signature="e#10930#10931#0" expanded="true" />
-            <element signature="e#10995#10996#0" expanded="true" />
-            <element signature="e#11045#11046#0" expanded="true" />
-            <element signature="e#11445#11446#0" expanded="true" />
-            <element signature="e#11499#11500#0" expanded="true" />
-            <element signature="e#11564#11565#0" expanded="true" />
-            <element signature="e#11619#11620#0" expanded="true" />
+            <element signature="method#UsuarioVista#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#componentes#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#CambiarImagen#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BotonNuevo#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BotonRol#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="e#10854#10855#0" expanded="true" />
+            <element signature="e#10903#10904#0" expanded="true" />
+            <element signature="e#10968#10969#0" expanded="true" />
+            <element signature="e#11018#11019#0" expanded="true" />
+            <element signature="class#BuscarKeyAdapter#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BuscarFocusAdapter#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="e#11418#11419#0" expanded="true" />
+            <element signature="e#11472#11473#0" expanded="true" />
+            <element signature="e#11537#11538#0" expanded="true" />
+            <element signature="e#11592#11593#0" expanded="true" />
+            <element signature="class#ListaRolMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#escogioRol#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#esCorreo#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#contraseñasIguales#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#datosPersonalesCompletos#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#datosContactoCompletos#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#datosCompletos#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#buscarUsuario#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#establecerDatos#0;class#UsuarioVista#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="172" column="37" lean-forward="false" selection-start-line="172" selection-start-column="37" selection-end-line="172" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#componentes#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#Buscador#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BuscadorFocus#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#PresentacionFocus#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#ListaPresentacionElemento#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BotonGuardar#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BotonNuevo#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BotonEditar#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="class#BotonLlegadaMercancia#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="method#datosCompletos#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="method#buscarProducto#0;class#ProductoRegistroVista#0" expanded="false" />
+            <element signature="method#establecerDatos#0;class#ProductoRegistroVista#0" expanded="false" />
           </folding>
         </state>
       </provider>

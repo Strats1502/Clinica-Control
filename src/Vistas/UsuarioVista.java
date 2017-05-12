@@ -274,10 +274,14 @@ public class UsuarioVista extends CustomVista {
     private class ListaBuscarMouseAdapter extends MouseAdapter {
         @Override
         public void mouseClicked(MouseEvent e) {
-            opcionBusqueda = listaBuscador.getSelectedValue().toString();
-            establecerDatos(opcionBusqueda);
-            listaBuscador.setVisible(false);
-            txtBuscar.setText("");
+            try {
+                opcionBusqueda = listaBuscador.getSelectedValue().toString();
+                establecerDatos(opcionBusqueda);
+                listaBuscador.setVisible(false);
+                txtBuscar.setText("");
+            } catch (NullPointerException nullException) {
+
+            }
         }
     }
 
