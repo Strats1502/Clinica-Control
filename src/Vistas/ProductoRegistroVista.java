@@ -40,7 +40,7 @@ public class ProductoRegistroVista extends CustomVista {
     //Variables cambiar imagen
     JFileChooser jFile = new JFileChooser();
     BufferedImage image;
-    File file = new File("src/Iconos/icn_Producto.png");
+    File file;
     FileFilter imageFilter = new FileNameExtensionFilter("Image files", ImageIO.getReaderFileSuffixes());
 
     //Lista de busqueda
@@ -49,14 +49,22 @@ public class ProductoRegistroVista extends CustomVista {
 
     //ListaComboPresentacion
     public static DefaultListModel dlmPresentacion = new DefaultListModel();
-    public static BeautyList listaPresentacion = new BeautyList(dlmPresentacion,40,270, 120,100);
+    public static BeautyList listaPresentacion = new BeautyList(dlmPresentacion, 40, 270, 120, 100);
+
+    //Errores
+    public static BeautyErrorMessage errorEditar = new BeautyErrorMessage("No has seleccionado un registro para editar...");
+    public static BeautyErrorMessage errorFormato = new BeautyErrorMessage("Ingresa un carácter numérico...");
+    public static BeautyErrorMessage errorTipo = new BeautyErrorMessage("Selecciona un tipo de presentación...");
+    public static BeautyErrorMessage errorNombre = new BeautyErrorMessage("Ingresa un nombre de producto...");
+    public static BeautyErrorMessage errorProveedor = new BeautyErrorMessage("Ingresa un proveedor...");
 
     //Variables necesarias
-    String opcionBusqueda = "";
+    String opcionBusqueda = null;
     String pathFoto = null;
     boolean editando = false;
+    int id = 0;
 
-    public ProductoRegistroVista () {
+    public ProductoRegistroVista() {
         componentes();
     }
 
@@ -120,7 +128,6 @@ public class ProductoRegistroVista extends CustomVista {
                 ImageIcon icono = new ImageIcon(image);
                 Icon i = new ImageIcon(icono.getImage().getScaledInstance(btnImagenProducto.getWidth(), btnImagenProducto.getHeight(), Image.SCALE_DEFAULT));
                 btnImagenProducto.setIcon(i);
-                System.out.println(file.getPath());
             } catch (IOException ioException) {
 
             } catch (IllegalArgumentException illegalArgument) {
@@ -171,6 +178,7 @@ public class ProductoRegistroVista extends CustomVista {
                 establecerDatos(opcionBusqueda);
                 listaBuscador.setVisible(false);
                 txtBuscar.setText("");
+                btnGuardar.setEnabled(false);
             } catch (NullPointerException nullException) {
 
             }
@@ -189,49 +197,57 @@ public class ProductoRegistroVista extends CustomVista {
     private class BotonGuardar implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            //String tipo = comboBoxTipo.getText();
-            String nombre = txtNombre.getText();
-            String proveedor = txtProovedor.getText();
-            double costo = Double.parseDouble(txtCosto.getText());
-            double precio = Double.parseDouble(txtPrecio.getText());
-            String presentacion = comboBoxPresentacion.getText();
-            boolean activo = checkActivo.isSelected();
+            try {
+                String nombre = txtNombre.getText();
+                String proveedor = txtProovedor.getText();
+                double costo = Double.parseDouble(txtCosto.getText());
+                double precio = Double.parseDouble(txtPrecio.getText());
+                String presentacion = comboBoxPresentacion.getText();
+                boolean activo = checkActivo.isSelected();
 
-            if(file != null) {
-                pathFoto = file.getPath();
-            } else {
-                pathFoto = "src/Iconos/icn_Producto.png";
-            }
 
-            if (datosCompletos(presentacion, nombre, proveedor)) {
-                if (!editando) {
-                    InsertarSQL.insertarProducto(1, nombre, proveedor, costo, precio, presentacion, activo, pathFoto);
-                    comboBoxPresentacion.setText("Presentación");
-                    txtNombre.setHint("Nombre");
-                    txtProovedor.setHint("Apellido paterno");
-                    txtCosto.setHint("Apellido materno");
-                    txtPrecio.setHint("Correo");
-                    checkActivo.setSelected(false);
-                    btnImagenProducto.setIcon(establecerIcono("Producto", 150, 150));
+                if (file != null) {
+                    pathFoto = file.getPath();
                 } else {
-                    ActualizarSQL.actualizarProducto(nombre, presentacion, proveedor, costo, precio, pathFoto, activo);
-                    comboBoxPresentacion.setText("Presentación");
-                    txtNombre.setHint("Nombre");
-                    txtProovedor.setHint("Apellido paterno");
-                    txtCosto.setHint("Apellido materno");
-                    txtPrecio.setHint("Correo");
-                    checkActivo.setSelected(false);
-                    btnImagenProducto.setIcon(establecerIcono("Producto", 150, 150));
+                    pathFoto = "src/Iconos/icn_Producto.png";
                 }
+
+                if (datosCompletos(presentacion, nombre, proveedor)) {
+                    if (!editando) {
+                        InsertarSQL.insertarProducto(1, nombre, proveedor, costo, precio, presentacion, activo, pathFoto);
+                        comboBoxPresentacion.setText("Presentación");
+                        txtNombre.setHint("Nombre");
+                        txtProovedor.setHint("Proveedor");
+                        txtCosto.setHint("Costo");
+                        txtPrecio.setHint("Precio");
+                        checkActivo.setSelected(false);
+                        btnImagenProducto.setIcon(establecerIcono("Producto", 150, 150));
+                    } else {
+                        ActualizarSQL.actualizarProducto(nombre, presentacion, proveedor, costo, precio, pathFoto, activo);
+                        InsertarSQL.insertarModificacion(id, 1, "Producto");
+                        comboBoxPresentacion.setText("Presentación");
+                        txtNombre.setHint("Nombre");
+                        txtProovedor.setHint("Proveedor");
+                        txtCosto.setHint("Costo");
+                        txtPrecio.setHint("Precio");
+                        checkActivo.setSelected(false);
+                        btnImagenProducto.setIcon(establecerIcono("Producto", 150, 150));
+                    }
+
+                }
+                opcionBusqueda = null;
+                editando = false;
+            } catch (NumberFormatException errorFormateo) {
+                errorFormato.setVisible(true);
             }
         }
     }
 
-    private class BotonNuevo implements  ActionListener {
+    private class BotonNuevo implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            opcionBusqueda = null;
             editando = false;
-
             btnImagenProducto.setEnabled(true);
             comboBoxPresentacion.setEnabled(true);
             txtNombre.setEnabled(true);
@@ -241,7 +257,7 @@ public class ProductoRegistroVista extends CustomVista {
             checkActivo.setEnabled(true);
 
             //Valores default
-            btnImagenProducto.setIcon(establecerIcono("Producto",150,150));
+            btnImagenProducto.setIcon(establecerIcono("Producto", 150, 150));
             comboBoxPresentacion.setText("Presentación");
             txtNombre.setText("Nombre");
             txtProovedor.setText("Proveedor");
@@ -254,14 +270,19 @@ public class ProductoRegistroVista extends CustomVista {
     private class BotonEditar implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            editando = true;
-            btnImagenProducto.setEnabled(true);
-            comboBoxPresentacion.setEnabled(false);
-            txtNombre.setEnabled(false);
-            txtProovedor.setEnabled(true);
-            txtCosto.setEnabled(true);
-            txtPrecio.setEnabled(true);
-            checkActivo.setEnabled(true);
+            if (opcionBusqueda != null) {
+                editando = true;
+                btnGuardar.setEnabled(true);
+                btnImagenProducto.setEnabled(true);
+                comboBoxPresentacion.setEnabled(false);
+                txtNombre.setEnabled(false);
+                txtProovedor.setEnabled(true);
+                txtCosto.setEnabled(true);
+                txtPrecio.setEnabled(true);
+                checkActivo.setEnabled(true);
+            } else {
+                errorEditar.setVisible(true);
+            }
         }
     }
 
@@ -273,24 +294,24 @@ public class ProductoRegistroVista extends CustomVista {
         }
     }
 
-    private static boolean datosCompletos (String presentacion, String nombre, String proveedor) {
+    private static boolean datosCompletos(String presentacion, String nombre, String proveedor) {
         if (!presentacion.equals("Presentación")) {
             if (!nombre.equals("Nombre")) {
                 if (!proveedor.equals("Proveedor")) {
                     return true;
                 } else {
-                    //Se necesita un proveedor
+                    errorProveedor.setVisible(true);
                 }
             } else {
-                //se necesita un nombre
+                errorNombre.setVisible(true);
             }
         } else {
-            //Seleccionar tipo
+            errorTipo.setVisible(true);
         }
         return false;
     }
 
-    private void buscarProducto (String cadena) {
+    private void buscarProducto(String cadena) {
         dlmBuscador.removeAllElements();
         listaBuscador.setVisible(true);
         String sql = "SELECT nombre , activo FROM Producto WHERE nombre LIKE ?";
@@ -303,8 +324,8 @@ public class ProductoRegistroVista extends CustomVista {
             while (rs.next()) {
                 resultados++;
                 String nombre = rs.getObject("nombre").toString();
-                boolean activo =rs.getBoolean("activo");
-                if(activo) {
+                boolean activo = rs.getBoolean("activo");
+                if (activo) {
                     dlmBuscador.addElement(nombre);
                 } else {
 
@@ -315,14 +336,15 @@ public class ProductoRegistroVista extends CustomVista {
         }
     }
 
-    private void establecerDatos (String opcionBusqueda) {
+    private void establecerDatos(String opcionBusqueda) {
         String sql = "SELECT * FROM Producto WHERE nombre = ?";
         try {
             PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
             ps.setString(1, opcionBusqueda);
             ps.executeQuery();
             ResultSet rs = ps.getResultSet();
-            while(rs.next()) {
+            while (rs.next()) {
+                this.id = Integer.parseInt(rs.getObject("id").toString());
                 String pathFoto = rs.getObject("path_foto").toString();
                 String presentacion = rs.getObject("presentacion").toString();
                 String nombre = rs.getObject("nombre").toString();
@@ -360,6 +382,11 @@ public class ProductoRegistroVista extends CustomVista {
         JFrame f = new JFrame("eee");
         f.add(listaBuscador);
         f.add(listaPresentacion);
+        f.add(errorEditar);
+        f.add(errorFormato);
+        f.add(errorTipo);
+        f.add(errorNombre);
+        f.add(errorProveedor);
         f.add(new ProductoRegistroVista());
         f.setDefaultCloseOperation(3);
         f.setUndecorated(true);
