@@ -105,7 +105,7 @@ public class InsertarSQL {
             ps.setString(4, descripcion);
             ps.executeUpdate();
         }  catch (SQLIntegrityConstraintViolationException sqlIntegrity) {
-
+            System.err.println("Enfermedad ya registrada!");
         } catch (SQLException sqlException) {
 
         }

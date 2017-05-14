@@ -63,4 +63,41 @@ public class ActualizarSQL {
         }
     }
 
+    public static void actualizarPaciente(String correo, String nombre, String apellidoPaterno, String apellidoMaterno, String fechaNacimiento, String religion, String telefono, String telefonoEmergencias, boolean activo, String pathFoto) {
+        String sql = "UPDATE Paciente SET nombre = ?, apellido_paterno = ?, apellido_materno = ?, fecha_nacimiento = ?, religion = ?, telefono = ?, telefono_emergencias = ?, activo = ?, path_foto = ? WHERE correo = ?";
+        String sql2 = "UPDATE Paciente SET nombre = ?, apellido_paterno = ?, apellido_materno = ?, fecha_nacimiento = ?, religion = ?, telefono = ?, telefono_emergencias = ?, activo = ? WHERE correo = ?";
+        try {
+            if (!pathFoto.equals("src/Iconos/icn_FotoPerfil.png")) {
+                PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
+                ps.setString(1, nombre);
+                ps.setString(2, apellidoPaterno);
+                ps.setString(3, apellidoMaterno);
+                ps.setString(4, fechaNacimiento);
+                ps.setString(5, religion);
+                ps.setString(6, telefono);
+                ps.setString(7, telefonoEmergencias);
+                ps.setBoolean(8, activo);
+                ps.setString(9 , pathFoto);
+                ps.setString(10, correo);
+                ps.executeUpdate();
+            } else {
+                PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql2);
+                ps.setString(1, nombre);
+                ps.setString(2, apellidoPaterno);
+                ps.setString(3, apellidoMaterno);
+                ps.setString(4, fechaNacimiento);
+                ps.setString(5, religion);
+                ps.setString(6, telefono);
+                ps.setString(7, telefonoEmergencias);
+                ps.setBoolean(8, activo);
+                ps.setString(9, correo);
+                ps.executeUpdate();
+            }
+        } catch (SQLIntegrityConstraintViolationException sqlConstraint) {
+            System.out.println(sqlConstraint.getMessage());
+        } catch (SQLException sqlException) {
+            System.out.println(sqlException.getMessage());
+        }
+    }
+
 }
