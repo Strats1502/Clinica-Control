@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71151962-86bd-49d1-a185-7ff9c6488b69" name="Default" comment="" />
+    <list default="true" id="71151962-86bd-49d1-a185-7ff9c6488b69" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vistas/VentaRegistroVista.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,10 +31,9 @@
       <file leaf-file-name="UsuarioVista.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vistas/UsuarioVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1694">
-              <caret line="302" column="0" lean-forward="false" selection-start-line="267" selection-start-column="3" selection-end-line="302" selection-end-column="0" />
+            <state relative-caret-position="1008">
+              <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="65" />
               <folding>
-                <element signature="imports" expanded="false" />
                 <element signature="method#UsuarioVista#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#CambiarImagen#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#BotonGuardar#0;class#UsuarioVista#0" expanded="false" />
@@ -39,16 +41,8 @@
                 <element signature="method#actionPerformed#0;class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#BotonNuevo#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#BotonRol#0;class#UsuarioVista#0" expanded="false" />
-                <element signature="e#11551#11552#0" expanded="false" />
-                <element signature="e#11600#11601#0" expanded="false" />
-                <element signature="e#11665#11666#0" expanded="false" />
-                <element signature="e#11715#11716#0" expanded="false" />
                 <element signature="class#BuscarKeyAdapter#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#BuscarFocusAdapter#0;class#UsuarioVista#0" expanded="false" />
-                <element signature="e#12115#12116#0" expanded="false" />
-                <element signature="e#12169#12170#0" expanded="false" />
-                <element signature="e#12234#12235#0" expanded="false" />
-                <element signature="e#12289#12290#0" expanded="false" />
                 <element signature="class#ListaBuscarMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="class#ListaRolMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
                 <element signature="method#escogioRol#0;class#UsuarioVista#0" expanded="false" />
@@ -68,8 +62,8 @@
       <file leaf-file-name="PacienteRegistroVista.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRegistroVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="126" column="7" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="199" selection-end-column="5" />
+            <state relative-caret-position="1484">
+              <caret line="126" column="7" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="199" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#CambiarImagen#0;class#PacienteRegistroVista#0" expanded="false" />
@@ -91,80 +85,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PacienteAntecedenteVista.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteAntecedenteVista.java">
+      <file leaf-file-name="VentaRegistroVista.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/VentaRegistroVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="306" column="0" lean-forward="true" selection-start-line="266" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+            <state relative-caret-position="584">
+              <caret line="178" column="44" lean-forward="true" selection-start-line="178" selection-start-column="44" selection-end-line="178" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#BuscarKeyAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="class#BuscarFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="class#ListaBuscarMouseAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="class#ComboTipoFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="e#6872#6873#0" expanded="true" />
-                <element signature="e#6922#6923#0" expanded="true" />
-                <element signature="e#6987#6988#0" expanded="true" />
-                <element signature="e#7038#7039#0" expanded="true" />
-                <element signature="class#ComboEnfermedadFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="e#7180#7181#0" expanded="true" />
-                <element signature="e#7236#7237#0" expanded="true" />
-                <element signature="e#7301#7302#0" expanded="true" />
-                <element signature="e#7358#7359#0" expanded="true" />
-                <element signature="class#ListaTipoMouseAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="class#ListaEnfermedadAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="class#BotonGuardar#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="method#buscarPaciente#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="method#establecerDatos#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="method#normal#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="method#cronico#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="method#datosCompletos#0;class#PacienteAntecedenteVista#0" expanded="false" />
-                <element signature="method#buscarID#0;class#PacienteAntecedenteVista#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PacienteRecomendacionVista.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRecomendacionVista.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="190" column="39" lean-forward="true" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1588#1589#0" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="class#BuscarKeyAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="class#BuscarFocusAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="class#ListaBuscarMouseAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="class#DoctorKeyAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="class#DoctorFocusAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="class#ListaDoctorMouseAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="method#buscarPaciente#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="method#establecerDatos#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="method#buscarID#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="method#buscarIDDoctor#0;class#PacienteRecomendacionVista#0" expanded="false" />
-                <element signature="method#buscarDoctor#0;class#PacienteRecomendacionVista#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductoLlegadaMercanciaVista.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoLlegadaMercanciaVista.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="122" column="20" lean-forward="false" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#Buscador#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-                <element signature="class#ListaBuscadorElemento#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-                <element signature="class#BuscadorFocus#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-                <element signature="class#BotonNuevo#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-                <element signature="method#selecciono#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-                <element signature="method#buscarProducto#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-                <element signature="method#establecerDatos#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-                <element signature="method#main#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+                <element signature="class#ComboFormaPagoFocusAdapter#0;class#VentaRegistroVista#0" expanded="false" />
+                <element signature="e#4736#4737#0" expanded="true" />
+                <element signature="e#4791#4792#0" expanded="true" />
+                <element signature="e#4856#4857#0" expanded="true" />
+                <element signature="e#4912#4913#0" expanded="true" />
+                <element signature="class#ListaFormaPagoMouseAdapter#0;class#VentaRegistroVista#0" expanded="false" />
+                <element signature="class#ComboTipoClienteFocusAdapter#0;class#VentaRegistroVista#0" expanded="false" />
+                <element signature="e#5377#5378#0" expanded="true" />
+                <element signature="e#5434#5435#0" expanded="true" />
+                <element signature="e#5499#5500#0" expanded="true" />
+                <element signature="e#5557#5558#0" expanded="true" />
+                <element signature="class#ListaTipoClienteMouseAdapter#0;class#VentaRegistroVista#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -187,7 +126,7 @@
       <file leaf-file-name="InsertarSQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Conexion/InsertarSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="392">
               <caret line="107" column="57" lean-forward="false" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
               <folding>
                 <element signature="method#insertarUsuario#0;class#InsertarSQL#0" expanded="false" />
@@ -207,51 +146,77 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15736">
-              <caret line="1124" column="45" lean-forward="false" selection-start-line="1124" selection-start-column="45" selection-end-line="1124" selection-end-column="45" />
+            <state relative-caret-position="15484">
+              <caret line="1106" column="16" lean-forward="false" selection-start-line="1106" selection-start-column="16" selection-end-line="1106" selection-end-column="16" />
               <folding>
-                <marker date="1494728446612" expanded="true" signature="94035:94060" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94035:94077" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94035:94095" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94035:94108" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94035:94123" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94158:96726" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94171:96711" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94225:94520" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94244:94505" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94307:94485" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94347:94451" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94368:94429" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94570:94897" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94589:94882" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94684:94862" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94724:94828" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94745:94806" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94948:95213" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="94967:95198" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95000:95178" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95040:95144" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95061:95122" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95256:95562" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95275:95547" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95349:95527" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95389:95493" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95410:95471" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95613:95970" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95632:95955" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95718:95935" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95758:95901" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="95779:95879" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96005:96311" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96024:96296" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96098:96276" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96138:96242" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96159:96220" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96363:96697" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96382:96682" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96484:96662" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96524:96628" ph="..." />
-                <marker date="1494728446612" expanded="true" signature="96545:96606" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93745:93804" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93745:93817" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93745:93832" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93745:93786" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93745:93769" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93867:96435" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93880:96420" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93934:94229" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="93953:94214" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94016:94194" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94056:94160" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94077:94138" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94279:94606" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94298:94591" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94393:94571" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94433:94537" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94454:94515" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94657:94922" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94676:94907" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94709:94887" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94749:94853" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94770:94831" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94965:95271" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="94984:95256" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95058:95236" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95098:95202" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95119:95180" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95322:95679" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95341:95664" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95427:95644" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95467:95610" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95488:95588" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95714:96020" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95733:96005" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95807:95985" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95847:95951" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="95868:95929" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="96072:96406" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="96091:96391" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="96193:96371" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="96233:96337" ph="..." />
+                <marker date="1494790648959" expanded="true" signature="96254:96315" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PacienteAntecedenteVista.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteAntecedenteVista.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="335" column="3" lean-forward="false" selection-start-line="335" selection-start-column="3" selection-end-line="363" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#BuscarKeyAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="class#BuscarFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="class#ListaBuscarMouseAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="class#ComboTipoFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="class#ComboEnfermedadFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="class#ListaTipoMouseAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="class#ListaEnfermedadAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="class#BotonGuardar#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="method#buscarPaciente#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="method#establecerDatos#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="method#normal#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="method#cronico#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="method#datosCompletos#0;class#PacienteAntecedenteVista#0" expanded="false" />
+                <element signature="method#buscarID#0;class#PacienteAntecedenteVista#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -315,6 +280,7 @@
         <option value="$PROJECT_DIR$/src/Conexion/InsertarSQL.java" />
         <option value="$PROJECT_DIR$/src/Vistas/PacienteAntecedenteVista.java" />
         <option value="$PROJECT_DIR$/src/Vistas/PacienteRecomendacionVista.java" />
+        <option value="$PROJECT_DIR$/src/Vistas/VentaRegistroVista.java" />
       </list>
     </option>
   </component>
@@ -345,8 +311,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -425,7 +392,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,27 +419,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PacienteRecomendacionVista">
-    <configuration default="false" name="ProductoRegistroVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Vistas.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Vistas.ProductoRegistroVista" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Clinica Control" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.VentaRegistroVista">
     <configuration default="false" name="UsuarioVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -542,6 +488,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Vistas.PacienteRecomendacionVista" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Clinica Control" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="VentaRegistroVista" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Vistas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Vistas.VentaRegistroVista" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -759,19 +725,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ProductoRegistroVista" />
-      <item index="1" class="java.lang.String" itemvalue="Application.UsuarioVista" />
-      <item index="2" class="java.lang.String" itemvalue="Application.PacienteRegistroVista" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PacienteAntecedenteVista" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PacienteRecomendacionVista" />
+      <item index="0" class="java.lang.String" itemvalue="Application.UsuarioVista" />
+      <item index="1" class="java.lang.String" itemvalue="Application.PacienteRegistroVista" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PacienteAntecedenteVista" />
+      <item index="3" class="java.lang.String" itemvalue="Application.PacienteRecomendacionVista" />
+      <item index="4" class="java.lang.String" itemvalue="Application.VentaRegistroVista" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PacienteRecomendacionVista" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PacienteAntecedenteVista" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PacienteRegistroVista" />
-        <item index="3" class="java.lang.String" itemvalue="Application.UsuarioVista" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ProductoRegistroVista" />
+        <item index="0" class="java.lang.String" itemvalue="Application.VentaRegistroVista" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PacienteRecomendacionVista" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PacienteAntecedenteVista" />
+        <item index="3" class="java.lang.String" itemvalue="Application.PacienteRegistroVista" />
+        <item index="4" class="java.lang.String" itemvalue="Application.UsuarioVista" />
       </list>
     </recent_temporary>
   </component>
@@ -805,13 +771,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.021505376" sideWeight="0.54392385" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854864" sideWeight="0.45607615" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854864" sideWeight="0.45607615" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28172207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28927493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -819,13 +785,35 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39712918" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.021505376" sideWeight="0.54392385" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39712918" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32535884" sideWeight="0.46412885" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.45607615" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28927493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -885,11 +873,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Imagenes/Fondo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ComponentesBeauty/BeautyImageButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1093,7 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,9 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="method#appleFont#0;class#CustomVista#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1125,73 +1104,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="228" column="24" lean-forward="false" selection-start-line="228" selection-start-column="24" selection-end-line="228" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#componentes#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#CambiarImagen#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#CambiarImagen#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#Buscador#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BuscadorFocus#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#PresentacionFocus#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#ListaBuscadorElemento#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#ListaPresentacionElemento#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonNuevo#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonEditar#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="class#BotonLlegadaMercancia#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#datosCompletos#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#buscarProducto#0;class#ProductoRegistroVista#0" expanded="false" />
-            <element signature="method#establecerDatos#0;class#ProductoRegistroVista#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15736">
-          <caret line="1124" column="45" lean-forward="false" selection-start-line="1124" selection-start-column="45" selection-end-line="1124" selection-end-column="45" />
+        <state relative-caret-position="15484">
+          <caret line="1106" column="16" lean-forward="false" selection-start-line="1106" selection-start-column="16" selection-end-line="1106" selection-end-column="16" />
           <folding>
-            <marker date="1494728446612" expanded="true" signature="94035:94060" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94035:94077" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94035:94095" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94035:94108" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94035:94123" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94158:96726" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94171:96711" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94225:94520" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94244:94505" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94307:94485" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94347:94451" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94368:94429" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94570:94897" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94589:94882" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94684:94862" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94724:94828" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94745:94806" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94948:95213" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="94967:95198" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95000:95178" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95040:95144" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95061:95122" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95256:95562" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95275:95547" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95349:95527" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95389:95493" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95410:95471" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95613:95970" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95632:95955" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95718:95935" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95758:95901" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="95779:95879" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96005:96311" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96024:96296" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96098:96276" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96138:96242" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96159:96220" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96363:96697" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96382:96682" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96484:96662" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96524:96628" ph="..." />
-            <marker date="1494728446612" expanded="true" signature="96545:96606" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93745:93804" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93745:93817" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93745:93832" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93745:93786" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93745:93769" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93867:96435" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93880:96420" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93934:94229" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="93953:94214" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94016:94194" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94056:94160" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94077:94138" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94279:94606" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94298:94591" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94393:94571" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94433:94537" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94454:94515" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94657:94922" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94676:94907" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94709:94887" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94749:94853" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94770:94831" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94965:95271" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="94984:95256" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95058:95236" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95098:95202" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95119:95180" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95322:95679" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95341:95664" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95427:95644" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95467:95610" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95488:95588" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95714:96020" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95733:96005" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95807:95985" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95847:95951" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="95868:95929" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="96072:96406" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="96091:96391" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="96193:96371" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="96233:96337" ph="..." />
+            <marker date="1494790648959" expanded="true" signature="96254:96315" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1209,65 +1171,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vistas/UsuarioVista.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
-          <caret line="302" column="0" lean-forward="false" selection-start-line="267" selection-start-column="3" selection-end-line="302" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#UsuarioVista#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#CambiarImagen#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#BotonGuardar#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#BotonNuevo#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#BotonRol#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="e#11551#11552#0" expanded="false" />
-            <element signature="e#11600#11601#0" expanded="false" />
-            <element signature="e#11665#11666#0" expanded="false" />
-            <element signature="e#11715#11716#0" expanded="false" />
-            <element signature="class#BuscarKeyAdapter#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#BuscarFocusAdapter#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="e#12115#12116#0" expanded="false" />
-            <element signature="e#12169#12170#0" expanded="false" />
-            <element signature="e#12234#12235#0" expanded="false" />
-            <element signature="e#12289#12290#0" expanded="false" />
-            <element signature="class#ListaBuscarMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="class#ListaRolMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#escogioRol#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#esCorreo#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#contraseñasIguales#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#datosPersonalesCompletos#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#datosContactoCompletos#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#datosCompletos#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#buscarUsuario#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#establecerDatos#0;class#UsuarioVista#0" expanded="false" />
-            <element signature="method#main#0;class#UsuarioVista#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoLlegadaMercanciaVista.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="122" column="20" lean-forward="false" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#Buscador#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-            <element signature="class#ListaBuscadorElemento#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-            <element signature="class#BuscadorFocus#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-            <element signature="class#BotonNuevo#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-            <element signature="method#selecciono#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-            <element signature="method#buscarProducto#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-            <element signature="method#establecerDatos#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-            <element signature="method#main#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Conexion/InsertarSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="392">
           <caret line="107" column="57" lean-forward="false" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
           <folding>
             <element signature="method#insertarUsuario#0;class#InsertarSQL#0" expanded="false" />
@@ -1285,8 +1191,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRegistroVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="126" column="7" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="199" selection-end-column="5" />
+        <state relative-caret-position="1484">
+          <caret line="126" column="7" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="199" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#CambiarImagen#0;class#PacienteRegistroVista#0" expanded="false" />
@@ -1307,25 +1213,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRecomendacionVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-246">
+          <caret line="198" column="51" lean-forward="true" selection-start-line="198" selection-start-column="51" selection-end-line="198" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/ProductoLlegadaMercanciaVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="226" column="4" lean-forward="false" selection-start-line="226" selection-start-column="4" selection-end-line="238" selection-end-column="0" />
+          <folding>
+            <element signature="e#1278#1279#0" expanded="false" />
+            <element signature="e#1307#1308#0" expanded="false" />
+            <element signature="class#Buscador#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+            <element signature="class#ListaBuscadorElemento#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+            <element signature="class#BuscadorFocus#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+            <element signature="e#3659#3660#0" expanded="false" />
+            <element signature="e#3713#3714#0" expanded="false" />
+            <element signature="e#3778#3779#0" expanded="false" />
+            <element signature="e#3833#3834#0" expanded="false" />
+            <element signature="class#BotonNuevo#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+            <element signature="method#selecciono#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+            <element signature="method#buscarProducto#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+            <element signature="method#establecerDatos#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+            <element signature="method#main#0;class#ProductoLlegadaMercanciaVista#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vistas/UsuarioVista.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="95" column="8" lean-forward="false" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="65" />
+          <folding>
+            <element signature="method#UsuarioVista#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#CambiarImagen#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BotonGuardar#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#BotonEditar#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BotonNuevo#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BotonRol#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BuscarKeyAdapter#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#BuscarFocusAdapter#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#ListaBuscarMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="class#ListaRolMouseAdapter#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#escogioRol#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#esCorreo#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#contraseñasIguales#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#datosPersonalesCompletos#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#datosContactoCompletos#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#datosCompletos#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#buscarUsuario#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#establecerDatos#0;class#UsuarioVista#0" expanded="false" />
+            <element signature="method#main#0;class#UsuarioVista#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteAntecedenteVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="306" column="0" lean-forward="true" selection-start-line="266" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+        <state relative-caret-position="262">
+          <caret line="335" column="3" lean-forward="false" selection-start-line="335" selection-start-column="3" selection-end-line="363" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#BuscarKeyAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
             <element signature="class#BuscarFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
             <element signature="class#ListaBuscarMouseAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
             <element signature="class#ComboTipoFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-            <element signature="e#6872#6873#0" expanded="true" />
-            <element signature="e#6922#6923#0" expanded="true" />
-            <element signature="e#6987#6988#0" expanded="true" />
-            <element signature="e#7038#7039#0" expanded="true" />
             <element signature="class#ComboEnfermedadFocusAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
-            <element signature="e#7180#7181#0" expanded="true" />
-            <element signature="e#7236#7237#0" expanded="true" />
-            <element signature="e#7301#7302#0" expanded="true" />
-            <element signature="e#7358#7359#0" expanded="true" />
             <element signature="class#ListaTipoMouseAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
             <element signature="class#ListaEnfermedadAdapter#0;class#PacienteAntecedenteVista#0" expanded="false" />
             <element signature="class#BotonGuardar#0;class#PacienteAntecedenteVista#0" expanded="false" />
@@ -1339,25 +1296,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRecomendacionVista.java">
+    <entry file="file://$PROJECT_DIR$/src/Vistas/VentaRegistroVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="190" column="39" lean-forward="true" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
+        <state relative-caret-position="584">
+          <caret line="178" column="44" lean-forward="true" selection-start-line="178" selection-start-column="44" selection-end-line="178" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="class#BuscarKeyAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="class#BuscarFocusAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="class#ListaBuscarMouseAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="class#DoctorKeyAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="class#DoctorFocusAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="class#ListaDoctorMouseAdapter#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="method#buscarPaciente#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="method#establecerDatos#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="method#buscarID#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="method#buscarIDDoctor#0;class#PacienteRecomendacionVista#0" expanded="false" />
-            <element signature="method#buscarDoctor#0;class#PacienteRecomendacionVista#0" expanded="false" />
+            <element signature="class#ComboFormaPagoFocusAdapter#0;class#VentaRegistroVista#0" expanded="false" />
+            <element signature="e#4736#4737#0" expanded="true" />
+            <element signature="e#4791#4792#0" expanded="true" />
+            <element signature="e#4856#4857#0" expanded="true" />
+            <element signature="e#4912#4913#0" expanded="true" />
+            <element signature="class#ListaFormaPagoMouseAdapter#0;class#VentaRegistroVista#0" expanded="false" />
+            <element signature="class#ComboTipoClienteFocusAdapter#0;class#VentaRegistroVista#0" expanded="false" />
+            <element signature="e#5377#5378#0" expanded="true" />
+            <element signature="e#5434#5435#0" expanded="true" />
+            <element signature="e#5499#5500#0" expanded="true" />
+            <element signature="e#5557#5558#0" expanded="true" />
+            <element signature="class#ListaTipoClienteMouseAdapter#0;class#VentaRegistroVista#0" expanded="false" />
           </folding>
         </state>
       </provider>
