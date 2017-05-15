@@ -3,34 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d65feb19-0b50-4c83-b135-4d303fe2950c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Iconos/icn_Logo.png" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Iconos/icn_Logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BotonEditar.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BotonEditar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BotonGuardar.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BotonGuardar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BotonLlegadaMercancia.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BotonLlegadaMercancia.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BotonNuevo.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BotonNuevo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$Buscador.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$Buscador.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BuscadorFocus.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$BuscadorFocus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$CambiarImagen.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$CambiarImagen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$ListaBuscadorElemento.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$ListaBuscadorElemento.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$ListaPresentacionElemento.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$ListaPresentacionElemento.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$PresentacionFocus.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista$PresentacionFocus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/ProductoRegistroVista.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BotonEditar.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BotonEditar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BotonGuardar.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BotonGuardar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BotonNuevo.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BotonNuevo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BotonRol.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BotonRol.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BuscarFocusAdapter.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BuscarFocusAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BuscarKeyAdapter.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$BuscarKeyAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$CambiarImagen.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$CambiarImagen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$ListaBuscarMouseAdapter.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$ListaBuscarMouseAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$ListaRolMouseAdapter.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista$ListaRolMouseAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista.class" afterPath="$PROJECT_DIR$/out/production/Clinica Control/Vistas/UsuarioVista.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Iconos/icn_Logo.png" afterPath="$PROJECT_DIR$/src/Iconos/icn_Logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Conexion/ActualizarSQL.java" afterPath="$PROJECT_DIR$/src/Conexion/ActualizarSQL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/PacienteRegistroVista.java" afterPath="$PROJECT_DIR$/src/Vistas/PacienteRegistroVista.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/ProductoLlegadaMercanciaVista.java" afterPath="$PROJECT_DIR$/src/Vistas/ProductoLlegadaMercanciaVista.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java" afterPath="$PROJECT_DIR$/src/Vistas/ProductoRegistroVista.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vistas/UsuarioVista.java" afterPath="$PROJECT_DIR$/src/Vistas/UsuarioVista.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,8 +65,8 @@
       <file leaf-file-name="PacienteRegistroVista.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRegistroVista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="136" column="4" lean-forward="false" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
+            <state relative-caret-position="277">
+              <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2942#2943#0" expanded="true" />
@@ -105,8 +78,8 @@
                 <element signature="method#datosCompletos#0;class#PacienteRegistroVista#0" expanded="false" />
                 <element signature="method#buscarPaciente#0;class#PacienteRegistroVista#0" expanded="false" />
                 <element signature="method#establecerDatos#0;class#PacienteRegistroVista#0" expanded="false" />
-                <marker date="1494630721836" expanded="true" signature="8637:8692" ph="SELECT corre... Paciente" />
-                <marker date="1494630721836" expanded="true" signature="9387:9426" ph="SELECT * FRO... P" />
+                <marker date="1494631056550" expanded="true" signature="8633:8688" ph="SELECT corre... Paciente" />
+                <marker date="1494631056550" expanded="true" signature="9383:9422" ph="SELECT * FRO... P" />
               </folding>
             </state>
           </provider>
@@ -809,11 +782,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17333000" />
+    <option name="totallyTimeSpent" value="17764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -824,11 +796,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.50852877" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45357832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1188,48 +1160,48 @@
         <state relative-caret-position="1583">
           <caret line="1277" column="45" lean-forward="false" selection-start-line="1277" selection-start-column="45" selection-end-line="1277" selection-end-column="45" />
           <folding>
-            <marker date="1494630702659" expanded="true" signature="94184:94208" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94184:94225" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94184:94243" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94184:94256" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94184:94271" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94306:96874" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94319:96859" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94373:94668" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94392:94653" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94455:94633" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94495:94599" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94516:94577" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94718:95045" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94737:95030" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94832:95010" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94872:94976" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="94893:94954" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95096:95361" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95115:95346" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95148:95326" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95188:95292" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95209:95270" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95404:95710" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95423:95695" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95497:95675" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95537:95641" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95558:95619" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95761:96118" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95780:96103" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95866:96083" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95906:96049" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="95927:96027" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96153:96459" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96172:96444" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96246:96424" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96286:96390" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96307:96368" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96511:96845" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96530:96830" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96632:96810" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96672:96776" ph="..." />
-            <marker date="1494630702659" expanded="true" signature="96693:96754" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94178:94202" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94178:94219" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94178:94237" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94178:94250" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94178:94265" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94300:96868" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94313:96853" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94367:94662" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94386:94647" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94449:94627" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94489:94593" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94510:94571" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94712:95039" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94731:95024" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94826:95004" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94866:94970" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="94887:94948" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95090:95355" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95109:95340" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95142:95320" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95182:95286" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95203:95264" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95398:95704" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95417:95689" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95491:95669" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95531:95635" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95552:95613" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95755:96112" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95774:96097" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95860:96077" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95900:96043" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="95921:96021" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96147:96453" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96166:96438" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96240:96418" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96280:96384" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96301:96362" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96505:96839" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96524:96824" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96626:96804" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96666:96770" ph="..." />
+            <marker date="1494630721971" expanded="true" signature="96687:96748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1334,8 +1306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vistas/PacienteRegistroVista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="136" column="4" lean-forward="false" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
+        <state relative-caret-position="277">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2942#2943#0" expanded="true" />
@@ -1347,8 +1319,8 @@
             <element signature="method#datosCompletos#0;class#PacienteRegistroVista#0" expanded="false" />
             <element signature="method#buscarPaciente#0;class#PacienteRegistroVista#0" expanded="false" />
             <element signature="method#establecerDatos#0;class#PacienteRegistroVista#0" expanded="false" />
-            <marker date="1494630721836" expanded="true" signature="8637:8692" ph="SELECT corre... Paciente" />
-            <marker date="1494630721836" expanded="true" signature="9387:9426" ph="SELECT * FRO... P" />
+            <marker date="1494631056550" expanded="true" signature="8633:8688" ph="SELECT corre... Paciente" />
+            <marker date="1494631056550" expanded="true" signature="9383:9422" ph="SELECT * FRO... P" />
           </folding>
         </state>
       </provider>
