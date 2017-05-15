@@ -75,18 +75,22 @@ public class InsertarSQL {
         }
     }
 
-    public static void insertarVenta(int usuarioAlta, String fechaAlta, String lugarExpedicion, String formaPago, double subtotal, double iva, double total, boolean activo) {
-        String sql = "INSERT INTO Venta VALUES(null, ?, current_date(), ?, ?, ?, ?, ?, ?, ?)";
+    public static void insertarVenta(int usuarioAlta,String folio, String formaPago, String tipoCliente, String correoPaciente, String nombre, String apellidoPaterno, String apellidoMaterno, String municipio, String colonia, String calleNumero, boolean activo) {
+        String sql = "INSERT INTO Venta VALUES(null, ?, ?, ?, current_date(), ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         try {
             PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
             ps.setInt(1, usuarioAlta);
-            ps.setString(2, fechaAlta);
-            ps.setString(3, lugarExpedicion);
-            ps.setString(4, formaPago);
-            ps.setDouble(5, subtotal);
-            ps.setDouble(6, iva);
-            ps.setDouble(7, total);
-            ps.setBoolean(8, activo);
+            ps.setString(2, folio);
+            ps.setString(3, formaPago);
+            ps.setString(4, tipoCliente);
+            ps.setString(5, correoPaciente);
+            ps.setString(6, nombre);
+            ps.setString(7, apellidoPaterno);
+            ps.setString(8, apellidoMaterno);
+            ps.setString(9, municipio);
+            ps.setString(10, colonia);
+            ps.setString(11, calleNumero);
+            ps.setBoolean(12, activo);
             ps.executeUpdate();
         } catch (SQLIntegrityConstraintViolationException sqlIntegrity) {
             System.out.println(sqlIntegrity.getMessage());
@@ -105,7 +109,7 @@ public class InsertarSQL {
             ps.setString(4, descripcion);
             ps.executeUpdate();
         }  catch (SQLIntegrityConstraintViolationException sqlIntegrity) {
-
+            System.err.println("Enfermedad ya registrada!");
         } catch (SQLException sqlException) {
 
         }
@@ -142,18 +146,48 @@ public class InsertarSQL {
         }
     }
 
-    public static void insertarVentaProducto(int ventaID, int productoID, int cantidad) {
-        String sql = "INSERT INTO VentaProducto VALUES(?, ?, ?)";
+    public static void insertarVentaProducto(int ventaID,String folioVenta, int productoID, int cantidad) {
+        String sql = "INSERT INTO VentaProducto VALUES(?, ?, ?, ?)";
         try {
             PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
             ps.setInt(1, ventaID);
-            ps.setInt(2, productoID);
-            ps.setInt(3, cantidad);
+            ps.setString(2, folioVenta);
+            ps.setInt(3, productoID);
+            ps.setInt(4, cantidad);
             ps.executeUpdate();
         } catch (SQLIntegrityConstraintViolationException sqlIntegrity) {
             System.out.println(sqlIntegrity.getMessage());
         } catch (SQLException sqlException) {
             System.out.println(sqlException.getMessage());
+        }
+    }
+
+    public static void insertarVentaConsulta(int ventaID, String folioVenta, int pacienteID, int medicoID) {
+        String sql = "INSERT INTO VentaConsulta VALUES(?, ?, ?, ?)";
+        try {
+            PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
+            ps.setInt(1, ventaID);
+            ps.setString(2, folioVenta);
+            ps.setInt(3, pacienteID);
+            ps.setInt(4, medicoID);
+            ps.executeUpdate();
+        } catch (SQLException sqlException) {
+            System.err.println(sqlException.getMessage());
+        }
+    }
+
+    public static void insertarVentaInfo(int ventaID, String folioVenta, double subtotal, double iva, double total) {
+        String sql = "INSERT INTO VentaInfo VALUES(?, ?, ?, ?, ?)";
+        try {
+            PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
+            ps.setInt(1, ventaID);
+            ps.setString(2, folioVenta);
+            ps.setDouble(3, subtotal);
+            ps.setDouble(4, iva);
+            ps.setDouble(5, total);
+            ps.executeUpdate();
+        } catch (SQLException sqlException) {
+            System.err.println(sqlException.getMessage());
         }
     }
 
@@ -197,4 +231,8 @@ public class InsertarSQL {
         }
     }
 
+
+    public static void main(String[] args) {
+        InsertarSQL.insertarVentaInfo(1, "1", 23.0, 10, 33.0);
+    }
 }

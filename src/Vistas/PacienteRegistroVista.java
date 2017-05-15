@@ -1,15 +1,16 @@
 package Vistas;
 
 import ComponentesBeauty.*;
+import Conexion.ActualizarSQL;
 import Conexion.ConexionSQL;
+import Conexion.InsertarSQL;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -55,6 +56,7 @@ public class PacienteRegistroVista extends CustomVista {
     public static BeautyErrorMessage errorCorreo = new BeautyErrorMessage("El usuario debe tener un correo...");
     public static BeautyErrorMessage errorNoEsCorreo = new BeautyErrorMessage("Ingresa un correo valido...");
     public static BeautyErrorMessage errorFormato = new BeautyErrorMessage("Ingresa un carácter numérico...");
+    public static BeautyErrorMessage errorEditar = new BeautyErrorMessage("No has seleccionado un registro para editar...");
 
     //Variables
     private static final String PATTERN_EMAIL = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
@@ -92,6 +94,14 @@ public class PacienteRegistroVista extends CustomVista {
 
         checkActivo = new BeautyCheckbox("Activo", 60, 450, 200);
         btnGuardar = new BeautyBlackButton("Guardar", 630, 440, 100, 30);
+
+        btnImagenPerfil.addActionListener(new CambiarImagen());
+        txtBuscar.addKeyListener(new BuscarKeyAdapter());
+        txtBuscar.addFocusListener(new BuscarFocusAdapter());
+        listaBuscador.addMouseListener(new ListaBuscarMouseAdapter());
+        btnNuevo.addActionListener(new BotonNuevo());
+        btnEditar.addActionListener(new BotonEditar());
+        btnGuardar.addActionListener(new BotonGuardar());
 
         this.add(btnImagenPerfil);
         this.add(btnNuevo);
@@ -134,6 +144,150 @@ public class PacienteRegistroVista extends CustomVista {
             }
         }
     }
+
+    private class BotonGuardar implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String nombre = txtNombre.getText();
+            String apellidoPaterno = txtApellidoPaterno.getText();
+            String apellidoMaterno = txtApellidoMaterno.getText();
+            String fechaNacimiento = txtFechaNacimiento.getText();
+            String religion = txtReligion.getText();
+            String correo = txtCorreo.getText();
+            String telefono  = txtTelefono.getText();
+            String telefonoEmergencias = txtTelefonoEmergencias.getText();
+            boolean activo = checkActivo.isSelected();
+
+            //si escogio imagen le asigna la ruta, si no se queda por default
+            if(file != null) {
+                pathFoto = file.getPath();
+            } else {
+                pathFoto = "src/Iconos/icn_FotoPerfil.png";
+            }
+
+            if (datosCompletos(nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, religion, correo, telefono, telefonoEmergencias)) {
+                if(!editando) {
+                    InsertarSQL.insertarPaciente(1, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, religion, correo, telefono, telefonoEmergencias, activo, pathFoto);
+                    txtNombre.setHint("Nombre");
+                    txtApellidoPaterno.setHint("Apellido paterno");
+                    txtApellidoMaterno.setHint("Apellido materno");
+                    txtFechaNacimiento.setHint("Fecha nacimiento");
+                    txtReligion.setHint("Religión");
+                    txtCorreo.setHint("Correo");
+                    txtTelefono.setHint("Teléfono");
+                    txtTelefonoEmergencias.setHint("Teléfono emergencias");
+                    checkActivo.setSelected(false);
+                    btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+                } else {
+                    ActualizarSQL.actualizarPaciente(correo, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, religion, telefono, telefonoEmergencias, activo, pathFoto);
+                    InsertarSQL.insertarModificacion(id, 1, "Paciente");
+                    txtNombre.setHint("Nombre");
+                    txtApellidoPaterno.setHint("Apellido paterno");
+                    txtApellidoMaterno.setHint("Apellido materno");
+                    txtFechaNacimiento.setHint("Fecha nacimiento");
+                    txtReligion.setHint("Religión");
+                    txtCorreo.setHint("Correo");
+                    txtTelefono.setHint("Teléfono");
+                    txtTelefonoEmergencias.setHint("Teléfono emergencias");
+                    checkActivo.setSelected(false);
+                    btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+                    txtCorreo.setEnabled(true);
+                }
+            }
+            opcionBusqueda = null;
+            editando = false;
+        }
+    }
+
+    private class BotonEditar implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if(opcionBusqueda != null) {
+                editando = true;
+                btnGuardar.setEnabled(true);
+                btnImagenPerfil.setEnabled(true);
+                txtNombre.setEnabled(true);
+                txtApellidoPaterno.setEnabled(true);
+                txtApellidoMaterno.setEnabled(true);
+                txtFechaNacimiento.setEnabled(true);
+                txtReligion.setEnabled(true);
+                txtCorreo.setEnabled(false);
+                txtTelefono.setEnabled(true);
+                txtTelefonoEmergencias.setEnabled(true);
+                checkActivo.setEnabled(true);
+            } else {
+                errorEditar.setVisible(true);
+            }
+        }
+    }
+
+    private class BotonNuevo implements  ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e ) {
+            editando = false;
+            opcionBusqueda = null;
+            btnGuardar.setEnabled(true);
+            btnImagenPerfil.setIcon(establecerIcono("FotoPerfil", 150, 150));
+            txtBuscar.setText("Buscar...");
+            txtNombre.setText("Nombre");
+            txtApellidoPaterno.setText("Apellido paterno");
+            txtApellidoMaterno.setText("Apellido materno");
+            txtFechaNacimiento.setText("Fecha nacimiento");
+            txtReligion.setText("Religión");
+            txtCorreo.setText("Correo");
+            txtTelefono.setText("Teléfono");
+            txtTelefonoEmergencias.setText("Teléfono emergencias");
+            checkActivo.setSelected(false);
+
+            btnImagenPerfil.setEnabled(true);
+            txtNombre.setEnabled(true);
+            txtApellidoPaterno.setEnabled(true);
+            txtApellidoMaterno.setEnabled(true);
+            txtFechaNacimiento.setEnabled(false);
+            txtReligion.setEnabled(true);
+            txtCorreo.setEnabled(true);
+            txtTelefono.setEnabled(true);
+            txtTelefonoEmergencias.setEnabled(true);
+            checkActivo.setEnabled(true);
+        }
+    }
+
+    private class BuscarKeyAdapter extends KeyAdapter {
+        @Override
+        public void keyTyped(KeyEvent e) {
+            char tecla = e.getKeyChar();
+            String cadena = txtBuscar.getText() + tecla;
+            buscarPaciente(cadena);
+        }
+    }
+
+    private class BuscarFocusAdapter extends FocusAdapter {
+        @Override
+        public void focusGained(FocusEvent e) {
+            listaBuscador.setVisible(true);
+        }
+
+        @Override
+        public void focusLost(FocusEvent e) {
+            listaBuscador.setVisible(false);
+        }
+    }
+
+    private class ListaBuscarMouseAdapter extends MouseAdapter {
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            try {
+                opcionBusqueda = listaBuscador.getSelectedValue().toString();
+                establecerDatos(opcionBusqueda);
+                listaBuscador.setVisible(false);
+                txtBuscar.setText("");
+                btnGuardar.setEnabled(false);
+            } catch (NullPointerException nullException) {
+
+            }
+        }
+    }
+
 
     /**
      *
@@ -279,6 +433,7 @@ public class PacienteRegistroVista extends CustomVista {
 
     public static void main(String[] args) {
         JFrame f = new JFrame("eee");
+        f.add(listaBuscador);
         f.add(new PacienteRegistroVista());
         f.setDefaultCloseOperation(3);
         f.setUndecorated(true);
