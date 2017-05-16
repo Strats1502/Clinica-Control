@@ -255,6 +255,7 @@ public class ProductoRegistroVista extends CustomVista {
             txtCosto.setEnabled(true);
             txtPrecio.setEnabled(true);
             checkActivo.setEnabled(true);
+            btnGuardar.setEnabled(true);
 
             //Valores default
             btnImagenProducto.setIcon(establecerIcono("Producto", 150, 150));

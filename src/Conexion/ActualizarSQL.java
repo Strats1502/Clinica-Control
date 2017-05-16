@@ -100,4 +100,25 @@ public class ActualizarSQL {
         }
     }
 
+    public static void actualizarVenta(String folio, String formaPago, String tipoCliente, String correoPaciente, String nombre, String apellidoPaterno, String apellidoMaterno, String municipio, String colonia, String calleNumero, boolean activo) {
+        String sql = "UPDATE Venta SET forma_pago = ?, tipo_cliente = ?, correo_paciente = ?, nombre = ?, apellido_paterno = ?, apellido_materno = ?, municipio = ?, colonia = ?, calle_numero = ?, activo = ? WHERE folio = ?";
+        try {
+            PreparedStatement ps = ConexionSQL.getConexion().prepareStatement(sql);
+            ps.setString(1, formaPago);
+            ps.setString(2, tipoCliente);
+            ps.setString(3, correoPaciente);
+            ps.setString(4, nombre);
+            ps.setString(5, apellidoPaterno);
+            ps.setString(6, apellidoMaterno);
+            ps.setString(7, municipio);
+            ps.setString(8, colonia);
+            ps.setString(9, calleNumero);
+            ps.setBoolean(10, activo);
+            ps.setString(11, folio);
+            ps.executeUpdate();
+        } catch (SQLException sqlException) {
+
+        }
+    }
+
 }
